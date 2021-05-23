@@ -116,9 +116,9 @@ body {
 
 h1, h2, h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 600; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 9rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
@@ -133,6 +133,9 @@ header {
   z-index: 2;
   width: 100%; }
 
+.about {
+  font-size: 6rem; }
+
 .text-secondary {
   color: #eece1a; }
 
@@ -146,6 +149,10 @@ main {
       main .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
+  main .cicons {
+    padding: auto;
+    text-align: center;
+    align-items: center; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -154,7 +161,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio  bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio  bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -168,20 +175,48 @@ main {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
+    .about-info .job .text {
+      text-align: center;
+      align-items: center; }
+
+.about-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .about-boxes div {
+    font-size: 1rem;
+    border: 2px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .about-boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eece1a;
+      color: #000; }
+      .about-boxes div:hover span {
+        color: #000; }
 
 .projects {
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr); }
-  .projects .te:hover {
-    opacity: 0.5;
-    color: #eece1a;
-    border-color: #eece1a;
-    transition: all 0.5s ease-out; }
+  .projects .te {
+    display: block;
+    text-align: center;
+    align-items: center; }
+    .projects .te:hover {
+      opacity: 0.5;
+      color: #eece1a;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -189,6 +224,28 @@ main {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+
+.cicons {
+  align-items: center; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #eece1a;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
