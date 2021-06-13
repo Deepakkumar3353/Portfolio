@@ -304,8 +304,8 @@ main {
       width: 150px;
       height: 110px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'j0b2' 'job3';
-    grid-template-columns: 1fr; }
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'j0b3' 'job2';
+    grid-template-columns: 3fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
